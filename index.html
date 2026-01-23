@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Expense Tracker</h1>
+            <p>Track your daily expenses with ease</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Add Expense Form -->
+            <div class="card">
+                <h2>Add Expense</h2>
+                <form id="expenseForm">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="e.g., Grocery shopping" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount (₹)</label>
+                        <input type="number" id="amount" placeholder="0.00" min="0" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" required>
+                            <option value="">Select a category</option>
+                            <option value="Food">🍔 Food & Dining</option>
+                            <option value="Transport">🚗 Transport</option>
+                            <option value="Entertainment">🎮 Entertainment</option>
+                            <option value="Shopping">🛍️ Shopping</option>
+                            <option value="Utilities">💡 Utilities</option>
+                            <option value="Health">🏥 Health & Medical</option>
+                            <option value="Education">📚 Education</option>
+                            <option value="Other">📌 Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <button type="submit">Add Expense</button>
+                </form>
+            </div>
+
+            <!-- Summary -->
+            <div class="card">
+                <h2>Summary</h2>
+                <div class="summary" id="summary">
+                    <div class="summary-item">
+                        <span>Total Expenses:</span>
+                        <span id="totalAmount">₹0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Number of Expenses:</span>
+                        <span id="expenseCount">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Average per Expense:</span>
+                        <span id="avgAmount">₹0.00</span>
+                    </div>
+                </div>
+                <button class="clear-all-btn" id="clearBtn">Clear All Expenses</button>
+            </div>
+        </div>
+
+        <!-- Category Breakdown -->
+        <div class="card">
+            <h2>Category Breakdown</h2>
+            <div class="category-breakdown" id="categoryBreakdown">
+                <div class="empty-message">No expenses yet. Add one to get started!</div>
+            </div>
+        </div>
+
+        <!-- Expenses List -->
+        <div class="card">
+            <h2>Recent Expenses</h2>
+            <div class="expenses-list" id="expensesList">
+                <div class="empty-message">No expenses recorded yet</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

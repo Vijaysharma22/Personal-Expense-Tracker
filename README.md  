@@ -1,0 +1,23 @@
+#  Personal Expense Tracker
+
+A simple and elegant web application to track your daily expenses with category-wise calculations.
+
+##  Features
+
+-  Add expenses with description, amount, category, and date
+-  Automatic category-wise calculations
+-  Real-time summary (total, count, average)
+-  Delete individual or all expenses
+-  Responsive design for mobile and desktop
+-  Beautiful gradient UI with smooth animations
+-  Currency formatted in Indian Rupees (₹)
+-  8 expense categories with emojis
+
+##  Quick Start
+
+1. Open `index.html` in your web browser
+2. Fill in the expense details
+3. Click "Add Expense"
+4. View your spending in real-time
+
+##  Project Structure
