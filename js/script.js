@@ -5,15 +5,15 @@ const expenses = [];
 const categories = ['Food', 'Transport', 'Entertainment', 'Shopping', 'Utilities', 'Health', 'Education', 'Other'];
 
 const categoryEmojis = {
-    'Food': '🍔',
-    'Transport': '🚗',
-    'Entertainment': '🎮',
-    'Shopping': '🛍️',
-    'Utilities': '💡',
-    'Health': '🏥',
-    'Education': '📚',
-    'Other': '📌'
-};
+    'Food':'',
+    'Transport':'',
+    'Entertainment':'',
+    'Shopping':'',
+    'Utilities':'',
+    'Health':'',
+    'Education':'',
+    'Other':'',
+};   
 
 // Initialize the app
 function init() {
